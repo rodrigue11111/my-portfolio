@@ -60,3 +60,10 @@ body { background-color: var(--light-bg); scroll-behavior: smooth; }
   font-size: 1.25rem; line-height: 1;
   background: var(--accent); color:#fff; border:none;
 }
+
+/* same height thumbnails & nice cropping */
+.project-thumb {
+  height: 160px;          /* pick a height that fits your design */
+  object-fit: cover;      /* fills the box without distortion */
+}
+

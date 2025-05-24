@@ -4,15 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rodrigue Yougbare – UI/UX Portfolio</title>
+
+  <!--  Bootstrap 5 (vanilla, CDN)  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!--  Custom styles  -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- ── NAVBAR ─────────────────────────────────────────────── -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Rodrigue Yougbare</a>
+    <a class="navbar-brand fw-bold" href="#">Portfolio</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -27,94 +31,112 @@
   </div>
 </nav>
 
-<!-- About Me Section -->
-<section class="py-5 bg-white" id="about">
+<!-- ── HEADER (GRADIENT + PHOTO) ──────────────────────────── -->
+<header class="header text-white text-center py-5">
+  <div class="container">
+    <img src="images/profile.jpg" alt="Rodrigue Yougbare" class="profile-img mb-3">
+    <h1 class="display-5 fw-bold">I'm Rodrigue Yougbare</h1>
+    <p class="lead">Aspiring UI/UX Designer • Building user-focused, colourful experiences</p>
+  </div>
+</header>
+
+<!-- ── ABOUT ──────────────────────────────────────────────── -->
+<section class="section-light" id="about">
   <div class="container text-center">
-    <img src="images/profile.jpg" alt="Rodrigue Yougbare" class="rounded-circle profile-img mb-4">
-    <h1 class="fw-bold">Hi, I’m Rodrigue Yougbare</h1>
-    <p class="lead mt-3">
-      I’m currently taking a UI design course at uOttawa. I enjoy designing user-friendly interfaces using the principles of visual communication like hierarchy, contrast, alignment, and balance. I'm exploring user-centered design and always looking to improve the user experience.
+    <h2 class="section-title">About Me</h2>
+    <p class="max-600 mx-auto">
+      I’m currently taking a UI design course at uOttawa. I enjoy creating intuitive and beautiful digital products using principles such as hierarchy, alignment, and contrast.
     </p>
   </div>
 </section>
 
-<!-- How I Work -->
-<section class="py-5 bg-light" id="workflow">
-  <div class="container text-center">
-    <h2 class="section-title">How I Work</h2>
-    <p>I’m learning user-centered design, heuristic evaluation, prototyping, and visual design principles through coursework and hands-on assignments.</p>
-    <p>Resources I use: 
-      <a href="https://www.nngroup.com/" target="_blank">NN/g</a> |
-      <a href="https://www.interaction-design.org/" target="_blank">IDF</a>
+<!-- ── HOW I WORK ─────────────────────────────────────────── -->
+<section class="section-accent" id="workflow">
+  <div class="container text-center text-light">
+    <h2 class="section-title text-white">How I Work</h2>
+    <p class="max-600 mx-auto">
+      I’m learning user-centered design, heuristic evaluation and rapid prototyping through coursework and hands-on projects.
+    </p>
+    <p class="mb-0">Resources I use:
+      <a class="link-light" href="https://www.nngroup.com/" target="_blank">NN/g</a> •
+      <a class="link-light" href="https://www.interaction-design.org/" target="_blank">IDF</a>
     </p>
   </div>
 </section>
 
-<!-- Case Studies -->
-<section class="py-5" id="case-studies">
+<!-- ── CASE STUDIES ───────────────────────────────────────── -->
+<section class="section-white" id="case-studies">
   <div class="container">
     <h2 class="section-title text-center mb-4">Case Studies</h2>
+
     <div class="row g-4">
+      <!-- card template -->
       <div class="col-md-6 col-lg-3">
-        <div class="card card-hover shadow">
+        <div class="card h-100 shadow card-hover">
           <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
           <div class="card-body text-center">
             <h5 class="card-title">Project 1</h5>
-            <a href="project1.html" class="btn btn-primary">View</a>
+            <a href="project1.html" class="btn btn-accent">View</a>
           </div>
         </div>
       </div>
+
       <div class="col-md-6 col-lg-3">
-        <div class="card card-hover shadow">
+        <div class="card h-100 shadow card-hover">
           <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
           <div class="card-body text-center">
             <h5 class="card-title">Project 2</h5>
-            <a href="project2.html" class="btn btn-primary">View</a>
+            <a href="project2.html" class="btn btn-accent">View</a>
           </div>
         </div>
       </div>
+
       <div class="col-md-6 col-lg-3">
-        <div class="card card-hover shadow">
+        <div class="card h-100 shadow card-hover">
           <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
           <div class="card-body text-center">
             <h5 class="card-title">Project 3</h5>
-            <a href="project3.html" class="btn btn-primary">View</a>
+            <a href="project3.html" class="btn btn-accent">View</a>
           </div>
         </div>
       </div>
+
       <div class="col-md-6 col-lg-3">
-        <div class="card card-hover shadow">
+        <div class="card h-100 shadow card-hover">
           <img src="images/project4.jpg" class="card-img-top" alt="Project 4">
           <div class="card-body text-center">
             <h5 class="card-title">Project 4</h5>
-            <a href="project4.html" class="btn btn-primary">View</a>
+            <a href="project4.html" class="btn btn-accent">View</a>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- Contact Section -->
-<section class="py-5 bg-light" id="contact">
+<!-- ── CONTACT ────────────────────────────────────────────── -->
+<section class="section-light" id="contact">
   <div class="container text-center">
-    <h2 class="section-title">Get in Touch</h2>
-    <p>Let’s connect professionally on LinkedIn:</p>
+    <h2 class="section-title">Contact</h2>
+    <p>Let’s connect on LinkedIn:</p>
     <a href="https://www.linkedin.com/in/001rodrigue/" target="_blank" class="btn btn-outline-dark">
       Visit My LinkedIn Profile
     </a>
   </div>
 </section>
 
-<!-- Back to Top -->
-<button id="backToTop" class="btn btn-dark rounded-circle shadow">↑</button>
+<!-- ── BACK-TO-TOP BUTTON ─────────────────────────────────── -->
+<button id="backToTop" class="btn btn-accent rounded-circle shadow">↑</button>
 
-<!-- Footer -->
-<footer class="bg-dark text-white text-center p-3 mt-5">
-  &copy; 2025 Rodrigue Yougbare. All rights reserved.
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer class="bg-dark text-white text-center p-3">
+  © 2025 Rodrigue Yougbare – All rights reserved.
 </footer>
 
+<!--  Bootstrap JS bundle  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!--  Smooth scroll & back-to-top  -->
 <script src="script.js"></script>
 </body>
 </html>

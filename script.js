@@ -1,14 +1,11 @@
-// Show/hide back to top button
-window.onscroll = function () {
+// show / hide back-to-top button
+window.addEventListener("scroll", () => {
   const btn = document.getElementById("backToTop");
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    btn.style.display = "block";
-  } else {
-    btn.style.display = "none";
-  }
-};
+  btn.style.display =
+    document.documentElement.scrollTop > 120 ? "block" : "none";
+});
 
-// Scroll to top
-document.getElementById("backToTop").addEventListener("click", function () {
+// smooth scroll to top
+document.getElementById("backToTop").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
